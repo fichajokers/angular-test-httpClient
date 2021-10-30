@@ -1,0 +1,8 @@
+<div class="card mb-5 w-18m">
+    <img class="card-img-top" [src]="user?.picture?.large" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{user?.name?.title}} {{user?.name?.first}} {{user?.name?.last}}</h5>
+      <p class="card-text">{{user?.email}}</p>
+      <a href="#" class="btn btn-primary btn-block" (click)="call(user?.cell) ">call user</a>
+    </div>
+</div>

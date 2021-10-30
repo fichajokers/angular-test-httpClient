@@ -1,3 +1,6 @@
+# Description
+Angular proyect to test (refresh my memory) HttpClient, @Input and @Ouput decorators
+
 # AngularTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.

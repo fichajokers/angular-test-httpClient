@@ -1,0 +1,6 @@
+<div class="container w-75">
+    <app-user-number-of-users (numberOfUsersEmit)="getUsers($event)"></app-user-number-of-users>
+    <div class="row">
+        <app-user-info class="col-sm" *ngFor="let user of users" [user]="user"></app-user-info>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<form class="mb-3" [formGroup]="formNumberOfUsers" (ngSubmit)="submitFormNumberOfUsers()">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Numbers of users in response</label>
+        <input type="number" class="form-control" aria-describedby="Number of users" placeholder="Number of users" formControlName="number">
+        <small class="form-text text-muted">set the number of users record show in response.</small>
+        <div *ngIf="number.errors?.required && (formNumberOfUsers.touched || formNumberOfUsers.dirty)" class="text-danger">
+            Number of user is required.
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block btn-success" [disabled]="!formNumberOfUsers.valid">Get Users</button>
+</form>
